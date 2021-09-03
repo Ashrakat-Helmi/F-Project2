@@ -1,0 +1,129 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(../img/p10.jpg);
+    background-size: 100%;
+
+
+}
+
+.img {
+    margin: 0px;
+}
+
+/* ============================================ end body */
+
+h1 {
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+h1.font1 {
+    font-family: 'Rampart One', cursive;
+
+    color: rgb(216, 106, 16);
+}
+
+h1 span {
+    color: rgb(107, 50, 4);
+}
+
+/*  ==================end h1 (welcome at ToDo app)=========== */
+.card1 {
+    margin-left: 15px;
+    background-color: rgb(107, 50, 4);
+    color: rgb(216, 106, 16);
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.btn1 {
+    background-color: rgb(216, 106, 16);
+    color: rgb(107, 50, 4);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+/* ========end card (write task)========================== */
+
+.card2 {
+    margin: -117px 130px 14px 716px;
+    background-color: #fff0;
+    border: none;
+}
+
+/* ==============================end card( tasks)=============== */
+
+
+
+
+
+
+
+@media(max-width:750px) {
+
+    body {
+        background-image: none;
+    }
+
+    .img {
+        background-image: url(../img/p12.jpg);
+        background-size: 100%;
+        height: 260px;
+    }
+
+    /* =========== end body======== */
+
+    h1 {
+        margin-top: 0px;
+        margin-left: 20px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    /* ================end h1 (welcome at ToDo app)=========== */
+    .card1 {
+        width: 75%;
+        height: 166px;
+        font-size: 16px;
+        margin-left: 30px;
+
+    }
+
+    .card-body1 {
+        padding: 10px;
+    }
+
+    .btn1 {
+
+        font-size: 16px;
+        font-weight: bold;
+
+    }
+
+    /* ========end card (write task)========================== */
+    .img2 {
+        background-image: url(../img/p11.jpg);
+        background-size: 100%;
+        height: 751px;
+    }
+
+    .card2 {
+        margin: 0px;
+    }
+
+    .alert {
+        margin: 59px 40px 3px 37px;
+    }
+
+    /* ==============================end card( tasks)=============== */
+
+}
