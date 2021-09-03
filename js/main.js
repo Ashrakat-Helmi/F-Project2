@@ -22,7 +22,7 @@ let addTask = () => {
         taskInput.value = "";
         noTasks.innerHTML = `
         <button type="button" class="btn btn-success">All Done</button>
-        <button type="button" class="btn btn-danger  float-right">Delete All</button>`
+        <button type="button" class="btn btn-danger  float-right deleteAll">Delete All</button>`
     }
 }
 addbtn.addEventListener('click', addTask)
@@ -30,5 +30,12 @@ addbtn.addEventListener('click', addTask)
 document.addEventListener('click', function (e) {
     if (e.target.classList.contains('delete')) {
         e.target.parentElement.remove();
+    }
+})
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('deleteAll')) {
+     
+        tasks.innerHTML=``
+        noTasks.innerHTML =` No Tasks Added Yet `
     }
 })
