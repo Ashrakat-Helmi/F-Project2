@@ -7,18 +7,19 @@ body {
     background-image: url(../img/p10.jpg);
     background-size: 100%;
 
-
+    width: 100%;
 }
 
-.img {
-    margin: 0px;
+.row{
+    margin: 0px !important;
 }
+
 
 /* ============================================ end body */
 
 h1 {
     margin-top: 5px;
-    
+
     font-size: 45px;
     font-weight: bold;
 }
@@ -36,7 +37,7 @@ h1 span {
 
 /*  ==================end h1 (welcome at ToDo app)=========== */
 .card1 {
-   
+
     background-color: rgb(107, 50, 4);
     color: rgb(216, 106, 16);
     font-size: 20px;
@@ -71,19 +72,25 @@ h1 span {
 
 @media(max-width:750px) {
 
-    body{
+    body {
         background-image: url(../img/p13.jpg);
+        background-size: 100%;
+
     }
+
+    
     h1 {
-        font-size: 30px;
+        font-size: 26px;
         margin-top: 13px;
     }
+
     .card1 {
         margin-right: 15px;
     }
+
     .card2 {
         margin-top: 75px;
         margin-left: -15px;
-       margin-right: 50px;
+        margin-right: 50px;
     }
 }

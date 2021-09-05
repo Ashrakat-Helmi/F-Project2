@@ -34,7 +34,7 @@ addbtn.addEventListener('click', addTask)
 document.addEventListener('click', function (e) {
     if (e.target.classList.contains('delete')) {
         e.target.parentElement.remove();
-        if(tasks.innerHTML ==``){
+        if(tasks.children.length == 0){
             noTasks.innerHTML =` No Tasks Added Yet `
         }
        
