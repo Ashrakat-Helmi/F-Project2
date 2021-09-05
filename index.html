@@ -8,6 +8,7 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/main.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,39 +17,43 @@
 </head>
 
 <body>
-    <div class="img col-md-6">
-      
-        <h1 class="font1"> Welcome At <span>ToDo</span> APP</h1>
 
-        <div class=" col-md-11">
-            <div class="card card1">
-                <div class="card-body ard-body1">
-                    <div class="form-group">
-                        <label for="">Write Task</label>
-                        <input  id="taskData" type="text" class="form-control" placeholder="write your task here">
+
+
+
+
+
+
+
+    <div class="">
+        <div class="row">
+            <div class="col-md-5 ml-3">
+                <h1 class="font1"> Welcome At <span>ToDo</span> APP</h1>
+                <div class="card card1">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Write Task</label>
+                            <input id="taskData" type="text" class="form-control" placeholder="write your task here">
+                        </div>
+                        <button id="addBtn" class="btn btn-block btn1"> Add Task</button>
                     </div>
-                    <button id="addBtn" class="btn btn-block btn1"> Add Task</button>
+                </div>
+            </div>
+            <div class="col-md-5 ml-5">
+
+                <div class="card card2 ">
+                    <div class="card-body">
+                        <div id="tasks"></div>
+                        <div id="noTask" class="alert alert-info">
+                            No Tasks Added Yet
+                        </div>
+        
+                    </div>
                 </div>
             </div>
         </div>
-
     </div>
-
-    <div class="img2">
-        
-            <div class="card card2">
-                <div class="card-body" >
-                    <div id="tasks"></div>
-                    <div id="noTask" class="alert alert-info">
-                        No Tasks Added Yet
-                    </div>
-                    
-                </div>
-            </div>
-       
-    </div>
-
-
+    
 
 
 

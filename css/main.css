@@ -17,9 +17,9 @@ body {
 /* ============================================ end body */
 
 h1 {
-    margin-top: 50px;
-    margin-left: 25px;
-    font-size: 50px;
+    margin-top: 55px;
+    
+    font-size: 45px;
     font-weight: bold;
 }
 
@@ -36,7 +36,7 @@ h1 span {
 
 /*  ==================end h1 (welcome at ToDo app)=========== */
 .card1 {
-    margin-left: 15px;
+   
     background-color: rgb(107, 50, 4);
     color: rgb(216, 106, 16);
     font-size: 20px;
@@ -55,7 +55,8 @@ h1 span {
 /* ========end card (write task)========================== */
 
 .card2 {
-    margin: -117px 130px 14px 716px;
+    margin-top:164px;
+    margin-left: 73px;
     background-color: #fff0;
     border: none;
 }
@@ -70,60 +71,19 @@ h1 span {
 
 @media(max-width:750px) {
 
-    body {
-        background-image: none;
+    body{
+        background-image: url(../img/p13.jpg);
     }
-
-    .img {
-        background-image: url(../img/p12.jpg);
-        background-size: 100%;
-        height: 260px;
-    }
-
-    /* =========== end body======== */
-
     h1 {
-        margin-top: 0px;
-        margin-left: 20px;
-        font-size: 26px;
-        font-weight: bold;
+        font-size: 32px;
+        margin-top: 20px;
     }
-
-    /* ================end h1 (welcome at ToDo app)=========== */
     .card1 {
-        width: 75%;
-        height: 166px;
-        font-size: 16px;
-        margin-left: 30px;
-
+        margin-right: 15px;
     }
-
-    .card-body1 {
-        padding: 10px;
-    }
-
-    .btn1 {
-
-        font-size: 16px;
-        font-weight: bold;
-
-    }
-
-    /* ========end card (write task)========================== */
-    .img2 {
-        background-image: url(../img/p11.jpg);
-        background-size: 100%;
-        height: 751px;
-    }
-
     .card2 {
-        margin: 0px;
+        margin-top: 100px;
+        margin-left: -15px;
+       margin-right: 50px;
     }
-
-    .alert {
-        margin: 59px 40px 3px 37px;
-    }
-
-    /* ==============================end card( tasks)=============== */
-
 }

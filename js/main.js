@@ -13,29 +13,39 @@ let addTask = () => {
         tasks.innerHTML += `
         <div class= 'alert alert-info '>
         <div class="custom-control custom-checkbox " style="display: inline;">
-        <input type="checkbox" class="custom-control-input" id="customCheck1">
-        <label class="custom-control-label" for="customCheck1"></label>
+        <input type="checkBox"  id="customCheck1" value="" >
+
         </div>
         ${taskData}
-        <button class='btn btn-danger float-right delete'  style="padding: 3px;"> Delete </button>
+        <i class="fas fa-trash-alt float-right delete "></i>
         </div>`
         taskInput.value = "";
         noTasks.innerHTML = `
-        <button type="button" class="btn btn-success">All Done</button>
-        <button type="button" class="btn btn-danger  float-right deleteAll">Delete All</button>`
+        <button type="button" class="btn btn-danger m-auto text-center deleteAll">Delete All</button> 
+        `
+        
     }
 }
+
+
+
 addbtn.addEventListener('click', addTask)
 
 document.addEventListener('click', function (e) {
     if (e.target.classList.contains('delete')) {
         e.target.parentElement.remove();
+        if(tasks.innerHTML ==``){
+            noTasks.innerHTML =` No Tasks Added Yet `
+        }
+       
     }
 })
 document.addEventListener('click', function (e) {
     if (e.target.classList.contains('deleteAll')) {
      
         tasks.innerHTML=``
+        
         noTasks.innerHTML =` No Tasks Added Yet `
     }
 })
+
